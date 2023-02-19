@@ -1,0 +1,102 @@
+@import './mixins';
+
+.hero {
+    &__container {
+        padding-right: 401px;
+    }
+
+    &__main {
+        position: relative;
+        background-image: url('../img/hero-ellipse.png');
+        background-position-x: right;
+        background-repeat: no-repeat;
+
+    }
+
+    &__content {
+        padding: 236px 0 236px 90px;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        margin-bottom: 16px;
+        font-family: 'PlayfairDisplay';
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+        color: var(--black);
+        @include psevdoLine;
+        &:before {
+            left: -70px
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 39px;
+        font-family: 'PlayfairDisplay';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--black)
+    }
+
+
+    &__text {
+        margin: 0;
+        margin-bottom: 64px;
+        max-width: 258px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--grey);
+
+    }
+
+    &__btn {
+        padding: 26px 38px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--white);
+        background-color: var(--balsamic);
+    }
+
+    &__picture {
+        position: absolute;
+        top: 0;
+        right: -200px;
+    }
+
+    &__span {
+        position: absolute;
+    }
+
+    &__span--left {
+        padding-right: 70px;
+        top: 100px;
+        left: -70px;
+        @include psevdoLine;
+
+        &::before {
+            right: 0;
+        }
+    }
+
+    &__span--right {
+        padding-left: 70px;
+        bottom: 100px;
+        right: -70px;
+        @include psevdoLine;
+
+        &::before {
+            left: 0;
+        }
+
+    }
+
+
+}
