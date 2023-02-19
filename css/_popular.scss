@@ -1,0 +1,95 @@
+@import './mixins';
+
+.popular {
+    padding-top: 79px;
+    padding-bottom: 86px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+        align-self: center;
+        font-family: 'PlayfairDisplay';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: var(--black);
+    }
+
+    &__btn {
+        margin-bottom: 25px;
+        padding-bottom: 11px;
+        align-self: flex-end;
+        border-bottom: 1px solid var(--light-grey);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--balsamic);
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+        padding: 40px 29px;
+        background-color: var(--emptiness);
+    }
+
+    &__subtitle {
+        margin: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--grey);
+
+    }
+
+    &__price {
+        padding-left: 10px;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--grey);
+
+    }
+
+    &__picture {
+        margin-bottom: 19px;
+        background-image: url('../img/popular-elipse.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    &__img {}
+
+    &__link {
+        position: relative;
+        padding-left: 50px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--black);
+        @include psevdoLine;
+        &::before {
+            left: 0;
+            width: 30px;
+        }
+    }
+}

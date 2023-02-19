@@ -1,0 +1,47 @@
+.footer {
+    padding: 79px 0 67px;
+    background-color: var(--balsamic);
+
+    &__container {
+        padding: 0 182px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__block {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+    }
+
+    &__phone {}
+
+    &__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--silver);
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__mail {}
+
+    &__title {
+        margin: 0;
+        margin-top: 12px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+}

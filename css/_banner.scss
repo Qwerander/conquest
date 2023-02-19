@@ -1,0 +1,50 @@
+.banner {
+    padding: 52px 0;
+    background: url('../img/banner-lines.png') no-repeat right, linear-gradient(90deg, var(--light) 35%, var(--emptiness) 35%);
+
+
+    &__container {
+        display: flex;
+    }
+
+    &__left {
+        width: 44%;
+    }
+
+    &__right {
+        padding: 72px 65px;
+        width: 56%
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 38px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: var(--black);
+
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 45px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--balsamic);
+    }
+
+    &__btn {
+        padding: 26px 38px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: var(--white);
+        background-color: var(--stone);
+
+    }
+}
